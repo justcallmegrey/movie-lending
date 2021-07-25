@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    # Mutators
+    public function setPasswordAttribute($password)
+    {
+        # Automatically encrypt password when create/updated
+        $this->attributes['password'] = bcrypt($password);
+    }
 }
