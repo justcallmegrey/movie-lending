@@ -1,19 +1,5 @@
 <style>
-
-.card-filter {
-    padding-bottom: 0;
+.return-caption {
+    margin-bottom: 15px;
 }
-#table-movies_wrapper .dataTables_length {
-    position: absolute;
-    top: 25px;
-}
-.table-header-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.table-header-container > button {
-    max-width: 200px;
-}
-
 </style>

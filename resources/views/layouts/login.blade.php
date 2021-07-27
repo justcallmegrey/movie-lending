@@ -28,7 +28,8 @@
                     @csrf
                     <div class="form-group">
                         <label for="email" class="sr-only">{{ __('E-Mail') }}</label>
-                        <input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email address" required autofocus>
+                        <input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email address" required autofocus>
+
                         @if ($errors->has('email'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('email') }}</strong>
@@ -37,7 +38,7 @@
                     </div>
                     <div class="form-group mb-4">
                         <label for="email" class="sr-only">{{ __('Password') }}</label>
-                        <input id="password" type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="***********" required>
+                        <input id="password" type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  value="{{ old('password') }}" placeholder="***********" required>
                         @if ($errors->has('password'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('password') }}</strong>
@@ -48,7 +49,7 @@
                         {{ __('Login') }}
                     </button>
                 </form>
-                <a href="#!" class="forgot-password-link">email: admin@mail.com, pass: password </a>
+                <a href="#!" class="forgot-password-link">Email: admin@mail.com, Pass: password </a>
                 <nav class="login-card-footer-nav">
                   <a href="#!">Test Application for Track&Roll</a>
                 </nav>

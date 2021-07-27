@@ -27,4 +27,10 @@
             </div>
         </div>
     </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            {!! trans('general.message.rate_of_late_charges') !!}
+        </div>
+    </div>
+
 {!! Form::close() !!}

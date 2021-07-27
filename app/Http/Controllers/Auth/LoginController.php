@@ -28,7 +28,9 @@ class LoginController extends Controller
             return redirect()->route('home');
         }
 
-        return back();
+        return redirect()->back()->withInput($request->only('email', 'remember'))->withErrors([
+            'password' => __('general.message.invalid-password'),
+        ]);
     }
 
     public function logout()

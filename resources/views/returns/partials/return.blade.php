@@ -10,17 +10,28 @@
                 {!! Form::open(['route' => ['returns.return', encrypt($data->id)], 'method' => 'PUT']) !!}
                     <div class="box-body">
                         @if($lateness_charge)
-                            <div>
+                            <div class="alert alert-danger" role="alert">
                                 {{ trans('general.message.return_confirm_with_charge') }}
+                                <h4 class="modal-title">BND {{ $lateness_charge }},00 </h4>
                             </div>
-                            <h4 class="modal-title">BND {{ $lateness_charge }}</h4>
+                            <div class="return-caption">
+                                {{ trans('general.message.return_with_charge_confirm') }}
+                            </div>
                         @else
-                            {{ trans('general.message.return_confirm') }}
+                            <div class="return-caption">
+                                {{ trans('general.message.return_confirm') }}
+                            </div>
                         @endif
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ trans('button.cancel') }}</button>
-                        <button type="submit" class="btn btn-danger">{{ trans('button.return') }}</button>
+                        <button type="submit" class="btn btn-danger">
+                            @if ($lateness_charge)
+                                {{ trans('button.pay_and_return') }}
+                            @else
+                                {{ trans('button.return') }}
+                            @endif
+                        </button>
                     </div>
                 {!! Form::close() !!}
             </div>

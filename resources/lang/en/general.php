@@ -92,6 +92,8 @@ return [
         'update-success' => 'Data successfully updated',
         'delete-success' => 'Data successfully deleted',
         'download-success' => 'Data successfully downloaded',
+        'rate_of_late_charges' => '*Note: Rate of lateness charge is lets say BND 0,25 per day late',
+        'return_with_charge_confirm' => 'Please proceed if the Customer has paid the fine and returned the rented movie(s)'
     ],
     'system_application' => [
         'name' => config('systemp_application.name'),

@@ -15,4 +15,5 @@ return [
     'reset' => 'Reset',
     'return' => 'Return',
     'apply' => 'Apply',
+    'pay_and_return' => 'Pay Fine & Return'
 ];

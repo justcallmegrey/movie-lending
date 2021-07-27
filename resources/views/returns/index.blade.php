@@ -8,7 +8,7 @@
     @include('layouts.sidebar')
 @endsection
 
-@push('styles')
+@push('styles_after')
     @include('returns.styles.styles')
 @endpush
 
