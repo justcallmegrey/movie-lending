@@ -16,6 +16,14 @@ Run Login with Email=admin@mail.com, Password=password
 
 Note: Run below command if you need 10 dummy data for Movies & Members  
 php artisan db:seed --class=MovieMemberSeeder  
+
+## Screenshots
+
+https://drive.google.com/file/d/10oqKgH7WFzkhSB9MELeWFymKDZKK3Klv/view?usp=sharing
+https://drive.google.com/file/d/1u8ShBI5tSX7tJWRIkP8qWBfcsIDlWBn5/view?usp=sharing
+https://drive.google.com/file/d/1kBz0wiudPFnOp7y9tjVk1YQiIMw4UJ7K/view?usp=sharing
+https://drive.google.com/file/d/1JIyKNGXZeHe_TiT7z3loFFpk82bdtcWN/view?usp=sharing
+
 ## Laravel
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
