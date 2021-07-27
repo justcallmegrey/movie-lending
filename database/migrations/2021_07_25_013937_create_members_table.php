@@ -14,11 +14,11 @@ class CreateMembersTable extends Migration
     public function up()
     {
         Schema::create('members', function (Blueprint $table) {
-            $table->bigIncrements('ID');
+            $table->bigIncrements('id');
             $table->string('name');
             $table->tinyInteger('age');
             $table->string('address');
-            $table->string('telephone'); // +62 format
+            $table->bigInteger('telephone');
             $table->string('identity_number');
             $table->date('date_of_joined');
             $table->boolean('is_active');

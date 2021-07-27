@@ -10,4 +10,13 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    protected $layouts  = 'layouts';
+
+    public function __construct()
+    {
+        view()->share([
+            'layouts' => $this->layouts,
+        ]);
+    }
 }

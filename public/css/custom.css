@@ -1,0 +1,306 @@
+/*** GLOBAL **/
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.app-content-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-container {
+    width: calc(100% - 200px);
+    max-width: calc(100% - 200px);
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+body {
+    background-color: #FFF;
+    min-height: 100vh;
+    font-size: 14px;
+}
+
+.content-wrapper {
+    padding: 10px 30px;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: unset;
+    }
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: 500;
+    background: #212529;
+    color: white;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+input.form-control,
+select.form-control {
+    border-radius: 5px;
+}
+
+.error-msg {
+    margin-top: 5px;
+}
+
+.error-msg > * {
+    color: #e3342f;
+}
+
+.center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.primary-bg{
+    background-color: #001871;
+}
+
+.btn-primary-custom {
+    background-color: #DA0037;
+    color: #fff !important;
+}
+
+.btn-primary-custom:hover {
+    background-color: #DA0037;
+}
+
+.btn-danger-custom {
+  background-color: #444444;
+  color: #fff !important;
+}
+
+.btn-danger-custom:hover {
+    background-color: #444444;
+}
+
+.btn-secondary-custom {
+    background-color: #444444;
+    color: white !important;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #444444;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.tabs-header{
+  position: relative;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-body .charts{
+    min-height: 25em;
+}
+
+.flex-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-2 {
+    flex: 0 0 18%;
+    margin: 0 9px;
+}
+
+/** Auto Required Asterisk (*) **/
+
+.form-group.required > label:after {
+    content:" *";
+    color:red;
+}
+
+label.required:after {
+    content:" *";
+    color:red;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/*** Toastr **/
+
+.toast-custom-top-right {
+    top: 12px;
+    right: 12px;
+}
+
+@media (min-width: 480px) {
+    .toast-custom-top-right {
+        top: 70px;
+    }
+}
+
+/*** Modal **/
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-footer {
+    border-top: 0;
+    padding: 0;
+}
+
+
+/*** Select2 ***/
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: calc(1.6em + 0.75rem + 2px) !important;
+    border-radius: 8px !important;
+}
+
+/*** Datatable ***/
+
+.card-table {
+    margin-bottom: 30px;
+}
+
+.table {
+    width: 100% !important;
+}
+
+.datatable-search-custom {
+    position: absolute;
+    right: 35px;
+    display: flex;
+}
+
+.datatable-search-custom .input-group input.form-control {
+    height: 30px;
+    width: 150px;
+}
+
+.datatable-search-custom .input-group .input-group-append span {
+    height: 30px;
+    background-color: #DA0037;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.datatable-search-custom .input-group .input-group-append img {
+    width: 20px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+    color: #fff;
+    border-color: #DA0037;
+    background-color: #DA0037;
+}
+
+.custom-radio .custom-control-label:before {
+    background-color: #e9ecef;
+}
+
+.dataTables_paginate .page-item.active .page-link {
+    background-color: #DA0037;
+    border-color: #DA0037;
+}
+
+.search-table, .search-btn {
+    cursor: pointer;
+}
+
+.small-icon{
+    width: 15px;
+}
+
+.notification-box{
+    border-right: 2px solid #fff;
+    height: 22px;
+    margin: 8px 0px;
+    position: relative;
+}
+
+.notification-box .icon{
+    padding: 0 15px;
+}
+
+.icon img{
+    width: 18px;
+}
+
+.user-name{
+    padding: 8px 0px 0 15px;
+}
+
+.logout{
+    padding: 5px 0 0 15px;
+}
+
+.btn-sm-custom {
+    height: 2.5rem;
+}
+
+.break {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.break-center {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.short {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+/* FILTER */
+.btn-filter-container {
+    padding: 30px 0px 0px;
+}
+
+.form-control-sm {
+    padding-right: 1rem;
+}
+
